@@ -34,10 +34,11 @@ public class OperacionesAnimales {
 
 
 
-public void saveMascostas(ArrayList<Mascotas> Listado, File Archivo) throws IOException {
+public void saveMascostas(ArrayList<Mascotas> Listado,ArrayList<Mascotas> Listado2 ,File Archivo) throws IOException {
     ObjectOutputStream out = null;
     try{out = new ObjectOutputStream(new FileOutputStream(Archivo,true));
         out.writeObject(Listado);
+        out.writeObject(Listado2);
     }finally {
         if(out !=null){
             out.close();
@@ -52,19 +53,15 @@ public void printMascotas(File Archivo) throws IOException,ClassNotFoundExceptio
     try {
         in= new ObjectInputStream(new FileInputStream(Archivo));
         ArrayList<Mascotas> clients;
-        ArrayList<Mascotas> clients2;
+
 
             clients = (ArrayList<Mascotas>) in.readObject();
+            clients.addAll((ArrayList<Mascotas>) in.readObject());
         for (Mascotas m: clients
              ) {m.showInfo();
 
         }
 
-        clients2 = (ArrayList<Mascotas>) in.readObject();
-        for (Mascotas m: clients2
-        ) {m.showInfo();
-
-        }
 
 
 

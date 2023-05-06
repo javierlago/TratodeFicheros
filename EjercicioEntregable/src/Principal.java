@@ -10,18 +10,15 @@ public class Principal {
         o.addGato(new Gato("Lume",1,true));
         o.addGato(new Gato("Salem",1,true));
         o.addGato(new Gato("Cat",1,true));
-
-
         /* Añadimos los perros */
         o.addPerro(new Perro("Firulais",2,true));
-        o.addPerro(new Perro("Dana",2,true));
-        o.addPerro(new Perro("Chuspy",2,true));
-        o.addPerro(new Perro("Canca",2,true));
+        o.addPerro(new Perro("Dana",3,true));
+        o.addPerro(new Perro("Chuspy",4,false));
+        o.addPerro(new Perro("Canca",5,false));
         o.addPerro(new Perro("Dogui",2,true));
 
         /*------------------------------------------------------------------------*/
-        o.saveMascostas(o.listadoGatos,o.createFile("l.dat"));
-        o.saveMascostas(o.listadoPerro,o.createFile("l.dat"));
+        o.saveMascostas(o.listadoGatos,o.listadoPerro,o.createFile("l.dat"));
         o.printMascotas(o.createFile("l.dat"));
     }
 

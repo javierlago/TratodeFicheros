@@ -35,7 +35,7 @@ public class Perro extends Mascotas{
 
      String rabo(){
         String rabo;
-        if(isRabolargo()){rabo="largp";}else {
+        if(isRabolargo()){rabo="largo";}else {
             rabo="corto";
         }
 
@@ -44,7 +44,7 @@ public class Perro extends Mascotas{
 
     @Override
     public void showInfo() {
-        System.out.print("Soy un "+Quiensoy()+" y mi nombre es "+getNombredelAnimal()+" y tengo "+getEdad() +" años y tengo el rabo"+ rabo());
+        System.out.print("Soy un "+Quiensoy()+" y mi nombre es "+getNombredelAnimal()+" y tengo "+getEdad() +" años y tengo el rabo "+ rabo()+"\n");
 
     }
 }

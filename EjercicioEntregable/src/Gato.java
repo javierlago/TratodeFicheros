@@ -40,6 +40,6 @@ public class Gato extends Mascotas {
 
     @Override
     public void showInfo() {
-        System.out.print("Soy un "+Quiensoy()+" Mi nombre es "+getNombredelAnimal()+" y tengo"+getEdad()+ "años y tengo el bigote "+bigote() );
+        System.out.print("Soy un "+Quiensoy()+" Mi nombre es "+getNombredelAnimal()+" y tengo"+getEdad()+ "años y tengo el bigote "+bigote()+"\n" );
     }
 }
