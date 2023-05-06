@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CreacionDeEjercicio/CreacionDeEjercicio.iml" filepath="$PROJECT_DIR$/CreacionDeEjercicio/CreacionDeEjercicio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjercicioEntregable/EjercicioEntregable.iml" filepath="$PROJECT_DIR$/EjercicioEntregable/EjercicioEntregable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjerciciosFicheros/EjerciciosFicheros.iml" filepath="$PROJECT_DIR$/EjerciciosFicheros/EjerciciosFicheros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TratodeFicheros.iml" filepath="$PROJECT_DIR$/.idea/TratodeFicheros.iml" />
+    </modules>
+  </component>
+</project>

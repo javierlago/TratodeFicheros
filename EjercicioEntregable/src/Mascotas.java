@@ -31,5 +31,7 @@ abstract class Mascotas implements Serializable {
     }
 
     abstract String Quiensoy();
+
+    abstract void showInfo();
 }
 
