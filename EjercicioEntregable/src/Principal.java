@@ -3,7 +3,11 @@ import java.io.IOException;
 public class Principal {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
+
         OperacionesAnimales o = new OperacionesAnimales();
+        if(o.createFile("l.dat").exists()){
+            o.recuperar(o.createFile("l.dat"));}
+
         /*Añadimos los Gatos*/
         o.addGato(new Gato("Misifu",1,true));
         o.addGato(new Gato("Garfield",1,true));
@@ -18,8 +22,11 @@ public class Principal {
         o.addPerro(new Perro("Dogui",2,true));
 
         /*------------------------------------------------------------------------*/
-        o.saveMascostas(o.listadoGatos,o.listadoPerro,o.createFile("l.dat"));
-        o.printMascotas(o.createFile("l.dat"));
+
+        o.saveMascostas(o.listadoCompleto,o.createFile("l.dat"));
+       o.printMascotas(o.createFile("l.dat"));
+
+
     }
 
 

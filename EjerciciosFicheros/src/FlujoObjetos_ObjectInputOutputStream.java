@@ -39,7 +39,7 @@ public class FlujoObjetos_ObjectInputOutputStream {
             //MiObjectOutputStream out2 = null;
             try {
                     // Abrimos o fluxo de datos sobre o ficheiro
-                    out = new ObjectOutputStream(new FileOutputStream(destFilePath));
+                    out = new ObjectOutputStream(new FileOutputStream(destFilePath,true));
                     // Escribimos na saída os clientes
                     out.writeObject(clients);
             } finally {
