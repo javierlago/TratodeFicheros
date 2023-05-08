@@ -49,7 +49,7 @@ public class OperacionesAnimales {
 
     public void saveMascostas(ArrayList<Mascotas> Listado,File Archivo) throws IOException {
     ObjectOutputStream out = null;
-    try{out = new ObjectOutputStream(new FileOutputStream(Archivo,true));
+    try{out = new ObjectOutputStream(new FileOutputStream(Archivo));
         out.writeObject(Listado);
 
     }finally {
@@ -66,22 +66,24 @@ public void printMascotas(File Archivo) throws IOException,ClassNotFoundExceptio
     ArrayList<Mascotas> Listado = new ArrayList<>();
     try {
         in = new ObjectInputStream(new FileInputStream(Archivo));
+    try{while(true) {
+        Listado.addAll((Collection<? extends Mascotas>) in.readObject());
+    }}catch (EOFException e){}
 
 
-    Listado.addAll((Collection<? extends Mascotas>) in.readObject());
 
 
-        for (Mascotas m : Listado
-        ) {
-            m.showInfo();
-        }
+
 
 
     }finally{
         if(in != null){
             in.close();
         }
-
+        for (Mascotas m : Listado
+        ) {
+            m.showInfo();
+        }
 
 
     }
@@ -105,6 +107,7 @@ public void printMascotas(File Archivo) throws IOException,ClassNotFoundExceptio
             in = new ObjectInputStream(new FileInputStream(Archivo));
 
             listadoCompleto= (ArrayList<Mascotas>) in.readObject();
+            System.err.println("Se añadiran elementos a un listado existente");
 
 
         }catch (EOFException e){

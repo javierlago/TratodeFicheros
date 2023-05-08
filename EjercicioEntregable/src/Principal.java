@@ -19,12 +19,12 @@ public class Principal {
         o.addPerro(new Perro("Dana",3,true));
         o.addPerro(new Perro("Chuspy",4,false));
         o.addPerro(new Perro("Canca",5,false));
-        o.addPerro(new Perro("Dogui",2,true));
+        o.addPerro(new Perro("Ultimo",2,true));
 
         /*------------------------------------------------------------------------*/
 
         o.saveMascostas(o.listadoCompleto,o.createFile("l.dat"));
-       o.printMascotas(o.createFile("l.dat"));
+        o.printMascotas(o.createFile("l.dat"));
 
 
     }
