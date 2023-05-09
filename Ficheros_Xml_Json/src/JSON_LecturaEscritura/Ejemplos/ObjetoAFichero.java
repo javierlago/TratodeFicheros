@@ -24,7 +24,7 @@ public class ObjetoAFichero {
         persona.getAsignaturas().add(new Asignatura(2,"CD"));
 
         // Java objects to File
-        try (FileWriter writer = new FileWriter("ficheros\\datos_personaConAsig.json")) {
+        try (FileWriter writer = new FileWriter("personaConAsig.json")) {
             gson.toJson(persona, writer);
             //directamente en una sentencia???
             //gson.toJson(persona, new FileWriter("datos_personaConAsig2.json"));
@@ -41,7 +41,7 @@ public class ObjetoAFichero {
     
     public static void GuardarJSON(String json){
         try (
-            BufferedWriter bw = new BufferedWriter(new FileWriter("ficheros\\datos_personaConAsig.json"))) {
+            BufferedWriter bw = new BufferedWriter(new FileWriter("personaConAsig.json"))) {
             bw.write(json);
             System.out.println("Fichero creado");
         } catch (IOException ex) {
