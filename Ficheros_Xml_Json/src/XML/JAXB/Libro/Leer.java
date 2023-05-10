@@ -29,7 +29,7 @@ public class Leer {
                 
             Libro libro = (Libro)unmarshaller.unmarshal(
                 //new File("src/Libro.xml") );
-                new File("ficheros/Libro.xml") );
+                new File("ficheros/Libro2.xml") );
             
             System.out.println(libro.getTitulo());
             System.out.println(libro.getPaginas());

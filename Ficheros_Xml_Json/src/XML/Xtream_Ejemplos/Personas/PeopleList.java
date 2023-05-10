@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package XML.Stream_Ejemplos;
+package XML.Xtream_Ejemplos.Personas;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,19 +12,19 @@ import java.util.List;
  *
  * @author mrnov
  */
-class ListaAlumnos {
+class PeopleList {
 
-    private List <Alumno> lista = new ArrayList<Alumno> ();
+    private List <Person> lista = new ArrayList<Person> ();
 	
-    public ListaAlumnos() {
+    public PeopleList() {
 	super();
     }
 
-    public void add(Alumno alumno) {
-    	lista.add(alumno);
+    public void add(Person person) {
+    	lista.add(person);
     }
 
-    public List<Alumno> getListaAlumno() {
+    public List<Person> getList() {
     	return lista;
     }
 }  

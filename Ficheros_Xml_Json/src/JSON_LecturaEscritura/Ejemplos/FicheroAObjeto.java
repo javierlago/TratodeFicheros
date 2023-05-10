@@ -25,7 +25,7 @@ public class FicheroAObjeto {
         //Ahora tenemos que leer ese fichero, os dejo como leerlo linea a linea:
         String fichero = "";
 
-        try (BufferedReader br = new BufferedReader(new FileReader("personaConAsig.json"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("./ficheros/personaConAsig.json"))) {
             String linea;
             while ((linea = br.readLine()) != null) {
                 fichero += linea;

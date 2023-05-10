@@ -1,4 +1,4 @@
-package XML.Stream_Ejemplos;
+package XML.Xtream_Ejemplos;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;

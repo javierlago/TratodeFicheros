@@ -1,4 +1,4 @@
-package XML.Stream_Ejemplos;
+package XML.Xtream_Ejemplos;
 
 
 import javax.swing.*;

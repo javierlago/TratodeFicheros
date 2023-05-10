@@ -37,7 +37,7 @@ public class Escribir {
             marshaller.marshal(libro, System.out);
                 
             // Escribimos en el archivo
-            marshaller.marshal(libro, new File("ficheros/Libro.xml"));
+            marshaller.marshal(libro, new File("ficheros/Libro2.xml"));
                 
         } catch (PropertyException e) {
             // TODO Auto-generated catch block
