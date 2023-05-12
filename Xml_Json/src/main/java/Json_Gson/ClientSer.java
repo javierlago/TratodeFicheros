@@ -1,4 +1,4 @@
-package XML.Xtream_Ejemplos.Clientes;
+package Json_Gson;
 
 import java.io.Serializable;
 

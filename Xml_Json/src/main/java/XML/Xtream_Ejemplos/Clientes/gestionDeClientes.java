@@ -40,7 +40,9 @@ public class gestionDeClientes {
     public static void pasarAxml(XStream xstream,ListadoClientes Lista ,File clientesXML) throws FileNotFoundException {
 
         xstream.toXML(Lista,new FileOutputStream(clientesXML));
-        System.out.printf("Se ha creado xml");
+        String Listado = xstream.toXML(Lista);
+        System.out.printf(Listado);
+        System.out.println("\nSe ha creado xml");
 
     }
 
