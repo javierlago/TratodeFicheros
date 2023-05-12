@@ -1,0 +1,29 @@
+{
+  "ListadoClientes": [
+    {
+      "Id": 1,
+      "Name": "Manolo",
+      "Account": 1000.0
+    },
+    {
+      "Id": 2,
+      "Name": "Pepa",
+      "Account": 2000.0
+    },
+    {
+      "Id": 3,
+      "Name": "Luisa",
+      "Account": 1500.0
+    },
+    {
+      "Id": 4,
+      "Name": "Pepe",
+      "Account": 4500.0
+    },
+    {
+      "Id": 5,
+      "Name": "Maria",
+      "Account": 1000.0
+    }
+  ]
+}

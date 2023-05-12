@@ -17,6 +17,8 @@ public class gestionDeClientes {
         xstream.alias("Listado", ListadoClientes.class);
         xstream.alias("Cliente", ClientSer.class);
 
+        xstream.addImplicitCollection(ListadoClientes.class,"ListadoClientes");
+
         //Creacion de los clientes//
 
         ClientSer Jose = new ClientSer(01,"Jose",2500);

@@ -36,7 +36,7 @@ public class ObjetoAFichero {
 
             //Volcado de la cadena con formato .json en forma de Fich.Texto
             GuardarJSON(json);
-        }  
+        }
     }
     
     public static void GuardarJSON(String json){

@@ -7,12 +7,12 @@ import java.util.List;
 
 public class ListadoClientes {
 
-    private List<XML.Xtream_Ejemplos.Clientes.ClientSer> ListadoClientes = new ArrayList<>();
+    private List<ClientSer> ListadoClientes = new ArrayList<>();
 
     public ListadoClientes(){super();}
 
 
-    public void add(XML.Xtream_Ejemplos.Clientes.ClientSer ClienteSer){ListadoClientes.add(ClienteSer);}
+    public void add(ClientSer ClienteSer){ListadoClientes.add(ClienteSer);}
 
     public List<ClientSer> getList(){return ListadoClientes;}
 
