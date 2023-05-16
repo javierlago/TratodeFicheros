@@ -12,7 +12,7 @@ import java.io.*;
 
 public class GestionDeClientes {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException,FileNotFoundException {
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
@@ -30,9 +30,13 @@ public class GestionDeClientes {
             gson.toJson(lista, writer);
             String json = gson.toJson(lista);
             System.out.printf(json);
+        }catch(FileNotFoundException e){
+            System.err.println(e.getMessage());
+
         }
 
         ListadoClientes Lista2;
+
         try (FileReader reader = new FileReader("Xml_Json/src/main/java/ficheros/miyeison.json")) {
 
             Lista2 = gson.fromJson(reader, ListadoClientes.class);
