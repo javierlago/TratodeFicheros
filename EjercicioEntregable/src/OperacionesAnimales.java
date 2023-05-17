@@ -72,10 +72,6 @@ public void printMascotas(File Archivo) throws IOException,ClassNotFoundExceptio
 
 
 
-
-
-
-
     }finally{
         if(in != null){
             in.close();
